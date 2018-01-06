@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alle Spil</title>
+</head>
+<body>
+
+<p>
+    {% for c in Game %}
+    {{ c.Id }}<br/>
+    {{ c.Title }}<br/>
+    {{ c.Price }}<br/>
+    {{ c.AntalPåLager }}<br/>
+    <br/>
+    {% endfor %}
+</p>
+
+
+</body>
+</html>
