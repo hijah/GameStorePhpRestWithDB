@@ -14,14 +14,14 @@
 <h1>Et spil med id</h1>
 <form action="../Controller/EtSpil.php" method="POST">
     ID: <input type="text" value="" name="ID" />
-    Send: <input type="submit" value="Hent En" name="EnKnap" />
+    Send: <input type="submit" value="Hent et" name="EnKnap" />
 </form>
 
 <h1>Tilføj et spil</h1>
 <form action="../Controller/TilføjSpil.php" method="POST">
     Id: <input type="text" value="" name="Id" />
     Title: <input type="text" value="" name="Title" />
-    Price: <input type="number" step="0.01" value="" name="Price" />
+    Price: <input type="number" step="0.01" value="" name="Price" />    <!-- step is used for making it possible to receive decimal(0.01 = 2 decimal) -->
     Antal på lager: <input type="number" value="" name="AntalPåLager" />
     Send: <input type="submit" value="Tilføj Spil" name="TilføjKnap" />
 </form>
@@ -36,7 +36,7 @@
 <form action="../Controller/UpdaterSpil.php" method="POST">
     Id på spillet som  skal updateres: <input type="text" value="" name="Id" />
     Title: <input type="text" value="" name="Title" />
-    Price: <input type="number" step="0.01" value="" name="Price">
+    Price: <input type="number" step="0.01" value="" name="Price">  <!-- step is used for making it possible to receive decimal(0.01 = 2 decimal) -->
     Antal på lager: <input type="number" value="" name="AntalPåLager">
     Send: <input type="submit" value="Updater Spil" name="UpdaterKnap" />
 </form>
